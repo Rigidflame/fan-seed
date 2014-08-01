@@ -11,6 +11,10 @@
   ],
   "dependencies": {
     "angular-apibase": "*",
-    "angular-route": "~1.2.21"
+    "angular-route": "~1.2.21",
+    "angular": "~1.2.21",
+    "angularfire": "~0.8.0",
+    "apibase": "*",
+    "firebase": "~1.0.18"
   }
 }
