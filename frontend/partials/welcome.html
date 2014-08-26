@@ -1,1 +1,14 @@
-{{greeting}}
+<b>{{greeting}} - {{simpleLogin.user.displayName}}</b><br />
+<button ng-click="simpleLogin.$login('twitter')" ng-hide="simpleLogin.user">Login</button>
+<button ng-click="simpleLogin.$logout()" ng-show="simpleLogin.user">Logout</button>
+
+<h2>Submissions</h2>
+<div ng-repeat="submission in submissions.$asArray()">
+    {{submission.$value}}<br />
+</div>
+
+<form>
+    <h2>Submission</h2>
+    <input type="text" ng-model="newSubmission"/>
+    <button ng-click="submissions.$push(newSubmission)">Submit</button>
+</form>

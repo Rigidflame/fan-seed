@@ -1,3 +1,13 @@
 app
-    .constant('FB_URL', 'https://bucket.firebaseio.com')
-    .constant('API_PATH', "burrito");
+    .constant('ref', 
+        new Firebase('bucket.firebaseio.com/fan-seed/')
+    )
+    .constant('apiRef', 
+        new Firebase('bucket.firebaseio.com/fan-seed/api')
+    )
+    .constant('apiMethods', 
+        ["greeting"]
+    )
+    .constant('useSimpleLogin', 
+        true
+    )
